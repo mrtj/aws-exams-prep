@@ -4,7 +4,7 @@ This repo contains the matterials I collected while preparing the AWS Certified 
 
 ## Softwares used 
 
-The old but gold [FreeMind](http://freemind.sourceforge.net/wiki/index.php/Main_Page) mind mapping software.
+[Freeplane](https://www.freeplane.org/) mind mapping software.
 
 ## Exams
 
