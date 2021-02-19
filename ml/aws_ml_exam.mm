@@ -17,7 +17,7 @@
 </html>
 </richcontent>
 <hook NAME="MapStyle">
-    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" fit_to_viewport="false" show_note_icons="true"/>
+    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" fit_to_viewport="false"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -158,11 +158,17 @@
 </node>
 </node>
 <node TEXT="Exploratory data analysis - 24%" ID="ID_147556389" CREATED="1611843832086" MODIFIED="1612447493433" LINK="#ID_1294958590">
-<node TEXT="Sanitize and prepare data for modelling" ID="ID_349926158" CREATED="1612373843895" MODIFIED="1612373856217"/>
-<node TEXT="Perform feature engineering" ID="ID_1425914952" CREATED="1612374568716" MODIFIED="1612374590771"/>
-<node TEXT="Analyize and visualize data for ML" ID="ID_1203344468" CREATED="1612374591839" MODIFIED="1612374602579"/>
+<node TEXT="Sanitize and prepare data for modelling" ID="ID_349926158" CREATED="1612373843895" MODIFIED="1612453177398" LINK="#ID_1456165851"/>
+<node TEXT="Perform feature engineering" ID="ID_1425914952" CREATED="1612374568716" MODIFIED="1612453192728" LINK="#ID_855967715"/>
+<node TEXT="Analyize and visualize data for ML" ID="ID_1203344468" CREATED="1612374591839" MODIFIED="1612453203397" LINK="#ID_164415869"/>
 </node>
-<node TEXT="Modelling - 36%" ID="ID_1235448139" CREATED="1611843842228" MODIFIED="1611843846148"/>
+<node TEXT="Modelling - 36%" ID="ID_1235448139" CREATED="1611843842228" MODIFIED="1612455044164" LINK="#ID_377361321">
+<node TEXT="Framing business problems as ML problems" ID="ID_849864367" CREATED="1612453212434" MODIFIED="1612455035535" LINK="#ID_1270997430"/>
+<node TEXT="Selecting the appropriate model(s) for a given ML problem" ID="ID_1285354916" CREATED="1612453222974" MODIFIED="1613569576004" LINK="#ID_1081731281"/>
+<node TEXT="Training ML models" ID="ID_780297251" CREATED="1612453251959" MODIFIED="1613582226424" LINK="#ID_592788930"/>
+<node TEXT="Performing hyperparameter optimization" ID="ID_1621201721" CREATED="1612453258288" MODIFIED="1613582240092" LINK="#ID_438151131"/>
+<node TEXT="Evaluating ML models" ID="ID_1148547059" CREATED="1612453219185" MODIFIED="1613582255961" LINK="#ID_1387001345"/>
+</node>
 <node TEXT="ML implementation and operations - 20%" ID="ID_732247053" CREATED="1611843813396" MODIFIED="1611843827729"/>
 </node>
 <node TEXT="Objectives" POSITION="right" ID="ID_358994141" CREATED="1611843937786" MODIFIED="1611856856412">
@@ -222,7 +228,7 @@
 <node TEXT="Duration: 170 minutes" ID="ID_829610417" CREATED="1611844059000" MODIFIED="1611844066364"/>
 <node TEXT="Number of questions: ~65" ID="ID_1663649135" CREATED="1611844067066" MODIFIED="1612447397143"/>
 </node>
-<node TEXT="AWS Services" POSITION="left" ID="ID_1805741993" CREATED="1611840445924" MODIFIED="1611856856418">
+<node TEXT="AWS Services" FOLDED="true" POSITION="left" ID="ID_1805741993" CREATED="1611840445924" MODIFIED="1611856856418">
 <node TEXT="SageMaker" ID="ID_316976853" CREATED="1611840752887" MODIFIED="1611856861618">
 <node TEXT="FAQ" ID="ID_1973087762" CREATED="1611840758683" MODIFIED="1611840768949" LINK="https://aws.amazon.com/sagemaker/faqs/" COLOR="#0033ff"/>
 <node TEXT="Ground Truth" ID="ID_109098359" CREATED="1612449531378" MODIFIED="1612449537229">
@@ -338,7 +344,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <font NAME="SansSerif" SIZE="12"/>
 </node>
@@ -368,7 +373,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="features" ID="ID_1340441932" CREATED="1612368897359" MODIFIED="1612368940256">
@@ -504,7 +508,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <font NAME="SansSerif" SIZE="12" BOLD="false"/>
 </node>
@@ -538,7 +541,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Data engineering" POSITION="left" ID="ID_258926782" CREATED="1611854112115" MODIFIED="1611856856426">
+<node TEXT="Data engineering" FOLDED="true" POSITION="left" ID="ID_258926782" CREATED="1611854112115" MODIFIED="1611856856426">
 <node TEXT="Data lake" ID="ID_231252679" CREATED="1611844759751" MODIFIED="1611854063110">
 <node TEXT="Heterogenous data types" ID="ID_1613214727" CREATED="1611853787828" MODIFIED="1611856861660">
 <node TEXT="transactional" ID="ID_1699338606" CREATED="1611853826148" MODIFIED="1611853838660" COLOR="#ff9933">
@@ -619,8 +622,8 @@
 <node TEXT="Dataset partitioning" ID="ID_1594935053" CREATED="1612372311125" MODIFIED="1612372320996"/>
 </node>
 </node>
-<node TEXT="Exploratory Data Analysis" POSITION="left" ID="ID_1294958590" CREATED="1612374611684" MODIFIED="1612374625419">
-<node TEXT="Data preparation" ID="ID_1456165851" CREATED="1612449895620" MODIFIED="1612449901410">
+<node TEXT="Exploratory Data Analysis" FOLDED="true" POSITION="left" ID="ID_1294958590" CREATED="1612374611684" MODIFIED="1612374625419">
+<node TEXT="Data preparation" FOLDED="true" ID="ID_1456165851" CREATED="1612449895620" MODIFIED="1612449901410">
 <node TEXT="Dataset generation" ID="ID_1852215348" CREATED="1612449443722" MODIFIED="1612449448698">
 <node TEXT="SageMaker Ground Truth" ID="ID_716386760" CREATED="1612449457824" MODIFIED="1612449742589" LINK="#ID_109098359"/>
 <node TEXT="Mechanical Turk" ID="ID_1391228925" CREATED="1612449469995" MODIFIED="1612449749732" LINK="#ID_648390580"/>
@@ -690,7 +693,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Feature engineering" ID="ID_855967715" CREATED="1612449839155" MODIFIED="1612449843935">
+<node TEXT="Feature engineering" FOLDED="true" ID="ID_855967715" CREATED="1612449839155" MODIFIED="1612449843935">
 <node TEXT="raw features -&gt; new features&#xa;for stronger prediction power" ID="ID_547204695" CREATED="1612449921187" MODIFIED="1612450346019"/>
 <node TEXT="too many raw features" ID="ID_1209000409" CREATED="1612450023746" MODIFIED="1612450231991">
 <node TEXT="dimensionality reduction" ID="ID_205161735" CREATED="1612450232375" MODIFIED="1612450238295"/>
@@ -750,7 +753,188 @@
 </node>
 </node>
 <node TEXT="Model development" POSITION="left" ID="ID_377361321" CREATED="1611844768540" MODIFIED="1611856856427">
-<node TEXT="Batch size" ID="ID_280169373" CREATED="1611844782636" MODIFIED="1611856861677">
+<node TEXT="Frame business problems&#xa;as ML problems" ID="ID_1270997430" CREATED="1612453489264" MODIFIED="1612454864944">
+<node TEXT="ML is appropriate" FOLDED="true" ID="ID_1677122767" CREATED="1612453521685" MODIFIED="1612453932691">
+<icon BUILTIN="button_ok"/>
+<node ID="ID_342068260" CREATED="1612453541283" MODIFIED="1612453637627"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      ML is about <i>identifying </i>
+    </p>
+    <p>
+      <i>hidden patterns</i>&nbsp;in data
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="patterns might be too complicated&#xa;to be identified manually" ID="ID_1061291832" CREATED="1612453818776" MODIFIED="1612453831625"/>
+</node>
+<node ID="ID_979429489" CREATED="1612453584247" MODIFIED="1612453647187"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Can leverage <i>huge </i>
+    </p>
+    <p>
+      <i>amounts</i>&nbsp;of data
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="dataset might be too large&#xa;to be analyzed manually" ID="ID_771694599" CREATED="1612453844579" MODIFIED="1612453866142"/>
+</node>
+<node ID="ID_815794014" CREATED="1612453660872" MODIFIED="1612453680801"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Make <i>predictions</i>&nbsp;based on
+    </p>
+    <p>
+      patterns and structures
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node ID="ID_1996337486" CREATED="1612453717699" MODIFIED="1612453748755"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Gets <i>progressively </i>
+    </p>
+    <p>
+      <i>better</i>&nbsp;as trained
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="rules can not be coded" ID="ID_1671932019" CREATED="1612454002361" MODIFIED="1612454089181">
+<node TEXT="eg. spam or not?" ID="ID_527422898" CREATED="1612454013658" MODIFIED="1612454019240"/>
+<node TEXT="rules are overlapping" ID="ID_1996703525" CREATED="1612454039585" MODIFIED="1612454044500"/>
+<node TEXT="need to be too fine-tuned" ID="ID_1708132821" CREATED="1612454045055" MODIFIED="1612454072517"/>
+</node>
+<node TEXT="Manual solution&#xa;can not scale" ID="ID_560346332" CREATED="1612454129614" MODIFIED="1612454151733"/>
+</node>
+<node TEXT="ML is not appropriate" FOLDED="true" ID="ID_467721570" CREATED="1612453897353" MODIFIED="1612453940506">
+<icon BUILTIN="button_cancel"/>
+<node TEXT="target can be determined by&#xa;simple rules or computations" ID="ID_1021816369" CREATED="1612453953845" MODIFIED="1612453975515"/>
+</node>
+<node TEXT="ML algorithm types" ID="ID_1071380743" CREATED="1612454184281" MODIFIED="1612454193839">
+<node TEXT="Supervised" ID="ID_1015137260" CREATED="1612454194368" MODIFIED="1612454198130">
+<node TEXT="definition" ID="ID_1270829967" CREATED="1612454526259" MODIFIED="1612454534320">
+<node ID="ID_1635430206" CREATED="1612454220897" MODIFIED="1612454249419"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      identify patterns between
+    </p>
+    <p>
+      variables and <i>known targets</i>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="the modelled system should be" ID="ID_401542300" CREATED="1612454282715" MODIFIED="1612454292681">
+<node TEXT="functioning well" ID="ID_284880477" CREATED="1612454293250" MODIFIED="1612454299318"/>
+<node TEXT="easy to observe" ID="ID_1048621813" CREATED="1612454299691" MODIFIED="1612454303025"/>
+</node>
+<node TEXT="labels" ID="ID_611106008" CREATED="1612454319528" MODIFIED="1612454334377">
+<node TEXT="are already available" ID="ID_1966628604" CREATED="1612454334750" MODIFIED="1612454344291"/>
+<node TEXT="should be easy to obtain" ID="ID_1338439343" CREATED="1612454344650" MODIFIED="1612454352130"/>
+</node>
+</node>
+<node TEXT="types" ID="ID_1423261285" CREATED="1612454544631" MODIFIED="1612454547504">
+<node TEXT="binary classification" ID="ID_881359474" CREATED="1612454547896" MODIFIED="1612454554423"/>
+<node TEXT="multiclass classification" ID="ID_462836760" CREATED="1612454555335" MODIFIED="1612454559701"/>
+<node TEXT="regresion" ID="ID_899186699" CREATED="1612454559863" MODIFIED="1612454563287"/>
+</node>
+</node>
+<node TEXT="Unsupervised" ID="ID_1305252212" CREATED="1612454198712" MODIFIED="1612454202077">
+<node TEXT="training data is not labeled" ID="ID_194215369" CREATED="1612454385037" MODIFIED="1612454392583"/>
+<node TEXT="input - output mapping is not understood" ID="ID_502857745" CREATED="1612454393007" MODIFIED="1612454409346"/>
+<node TEXT="clustering" ID="ID_1719238949" CREATED="1612454419094" MODIFIED="1612454422641">
+<node TEXT="group data points into clusters" ID="ID_1557320610" CREATED="1612454428082" MODIFIED="1612454433872"/>
+<node TEXT="based on similar features" ID="ID_143954531" CREATED="1612454444858" MODIFIED="1612454450351"/>
+</node>
+</node>
+<node TEXT="Reinforcement" ID="ID_774848934" CREATED="1612454202247" MODIFIED="1612454205912"/>
+</node>
+<node TEXT="A business problem often can be&#xa;reframed to different ML problems" ID="ID_179477083" CREATED="1613568770465" MODIFIED="1613568788644">
+<node TEXT="eg. predicting sales" ID="ID_1813264170" CREATED="1613568792366" MODIFIED="1613568800707">
+<node TEXT="directly predict the number&#xa;of sold items? (regression)" ID="ID_1775784032" CREATED="1613568802984" MODIFIED="1613568903508">
+<icon BUILTIN="button_ok"/>
+</node>
+<node TEXT="predict if an item will sell more&#xa;than x times? (binary classification)" ID="ID_1172043680" CREATED="1613568830275" MODIFIED="1613568896256">
+<icon BUILTIN="button_cancel"/>
+</node>
+</node>
+<node TEXT="frame in the simplest form&#xa;without losing important information" ID="ID_730379867" CREATED="1612454800457" MODIFIED="1612454858631"/>
+</node>
+</node>
+<node TEXT="Select the appropriate&#xa;model(s) for an ML problem" ID="ID_1081731281" CREATED="1612455060919" MODIFIED="1612455072590">
+<node TEXT="SageMaker built-in algorithms" FOLDED="true" ID="ID_1292883509" CREATED="1613569385177" MODIFIED="1613571392023" LINK="https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html">
+<node TEXT="Binary or multiclass&#xa;classification" ID="ID_1595510980" CREATED="1612455253452" MODIFIED="1612455271766">
+<node TEXT="Linear Learner" ID="ID_493629159" CREATED="1612455272004" MODIFIED="1612455277711"/>
+<node TEXT="XGBoost" ID="ID_560500236" CREATED="1612455277991" MODIFIED="1612455281524"/>
+<node TEXT="K-Nearest Neighbors" ID="ID_548895975" CREATED="1612455282222" MODIFIED="1612455292511"/>
+</node>
+<node TEXT="Regression" ID="ID_1492638072" CREATED="1612455295579" MODIFIED="1612455311450">
+<node TEXT="Linear Learner" ID="ID_1971432633" CREATED="1612455299583" MODIFIED="1612455318020"/>
+<node TEXT="XGBoost" ID="ID_551570080" CREATED="1612455318459" MODIFIED="1612455326174"/>
+</node>
+<node TEXT="NLP" ID="ID_1092780184" CREATED="1612455444023" MODIFIED="1612455447225">
+<node TEXT="BlazingText" ID="ID_1261023503" CREATED="1612455447901" MODIFIED="1612455453768">
+<node TEXT="Word2vec" ID="ID_700515788" CREATED="1612455454175" MODIFIED="1612455463724"/>
+<node TEXT="text classification" ID="ID_1172817880" CREATED="1612455464395" MODIFIED="1612455469714"/>
+</node>
+<node TEXT="Sequence2sequence" ID="ID_197285787" CREATED="1612455472130" MODIFIED="1612455481278">
+<node TEXT="supervised learning" ID="ID_19666795" CREATED="1612455482329" MODIFIED="1612455497203"/>
+<node TEXT="input: sequence" ID="ID_994809827" CREATED="1612455498317" MODIFIED="1612455505988"/>
+<node TEXT="output: sequence" ID="ID_1530515193" CREATED="1612455506381" MODIFIED="1612455510054"/>
+</node>
+<node TEXT="Object2Vec" ID="ID_942907486" CREATED="1612455517033" MODIFIED="1612455524818">
+<node TEXT="generalizes Word2Vec" ID="ID_1956099241" CREATED="1612455525112" MODIFIED="1612455547817"/>
+</node>
+</node>
+<node TEXT="Computer Vision" ID="ID_1716872543" CREATED="1613569287068" MODIFIED="1613569290787">
+<node TEXT="Image classification" ID="ID_814653858" CREATED="1613569311757" MODIFIED="1613569327237"/>
+<node TEXT="Object detection" ID="ID_342207962" CREATED="1613569315749" MODIFIED="1613569322381"/>
+<node TEXT="Semantic segmentation" ID="ID_479112906" CREATED="1613569328045" MODIFIED="1613569332771"/>
+<node TEXT="Instance segmentation" ID="ID_1527010293" CREATED="1613585028097" MODIFIED="1613585033617"/>
+</node>
+</node>
+<node TEXT="Other training options" ID="ID_1723985018" CREATED="1613569407156" MODIFIED="1613569421913">
+<node TEXT="Apache Spark with SageMaker" ID="ID_1751689879" CREATED="1613569422623" MODIFIED="1613569441236"/>
+<node TEXT="Custom code to be trained with&#xa;TF, MXNet or pytorch" ID="ID_1590983275" CREATED="1613569441547" MODIFIED="1613569479336"/>
+<node TEXT="Custom algorithm in Docker image" ID="ID_1179383838" CREATED="1613569491200" MODIFIED="1613569499971"/>
+<node TEXT="AWS Marketplace algorithms" ID="ID_1387505657" CREATED="1613569519165" MODIFIED="1613569526399"/>
+</node>
+</node>
+<node TEXT="Training ML models" FOLDED="true" ID="ID_592788930" CREATED="1612453462680" MODIFIED="1613582217922">
+<node TEXT="Batch size" FOLDED="true" ID="ID_280169373" CREATED="1611844782636" MODIFIED="1611856861677">
 <node ID="ID_122431561" CREATED="1611844786951" MODIFIED="1611844831987" LINK="https://machinelearningmastery.com/how-to-control-the-speed-and-stability-of-training-neural-networks-with-gradient-descent-batch-size/" COLOR="#0033ff"><richcontent TYPE="NODE">
 
 <html>
@@ -782,7 +966,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1051348613" CREATED="1611845686223" MODIFIED="1611851832447"><richcontent TYPE="NODE">
@@ -924,7 +1107,7 @@
 <node TEXT="Very noisy training process" ID="ID_304617869" CREATED="1611846285422" MODIFIED="1611846315195"/>
 </node>
 </node>
-<node TEXT="Epoch" ID="ID_345640278" CREATED="1611850962552" MODIFIED="1611856861681">
+<node TEXT="Epoch" FOLDED="true" ID="ID_345640278" CREATED="1611850962552" MODIFIED="1611856861681">
 <node ID="ID_1350430878" CREATED="1611851001377" MODIFIED="1611851144622" COLOR="#669900">
 <icon BUILTIN="yes"/>
 <richcontent TYPE="NODE">
@@ -943,6 +1126,176 @@
   </body>
 </html>
 </richcontent>
+</node>
+</node>
+<node TEXT="calculate precision and recalls based on confusion matrix" ID="ID_1672955612" CREATED="1612538690010" MODIFIED="1612538722838"/>
+<node TEXT="Training -&gt; Evaluation -&gt; Tuning&#xa;is an iterative process" ID="ID_626274472" CREATED="1613569608383" MODIFIED="1613569677930"/>
+<node TEXT="Dataset split" FOLDED="true" ID="ID_605935678" CREATED="1613569915936" MODIFIED="1613570178500">
+<node TEXT="Holdout method" ID="ID_709066664" CREATED="1613570192303" MODIFIED="1613570196511">
+<node TEXT="Training set (eg. 70%)" ID="ID_114825617" CREATED="1613569921308" MODIFIED="1613569929423">
+<node TEXT="used to train the model" ID="ID_960541665" CREATED="1613570018950" MODIFIED="1613570024713"/>
+</node>
+<node TEXT="Validation set (eg. 15%)" ID="ID_1183308031" CREATED="1613569929878" MODIFIED="1613569946895">
+<node TEXT="est. model performance during&#xa;hyperparameter tuning" ID="ID_1038530755" CREATED="1613570025801" MODIFIED="1613570100246"/>
+<node TEXT="compare different model&#xa;architectures" ID="ID_1082974885" CREATED="1613570061588" MODIFIED="1613570087525"/>
+</node>
+<node TEXT="Test set (eg. 15%)" ID="ID_1305647373" CREATED="1613569947206" MODIFIED="1613569951975">
+<node TEXT="evaluate predictive&#xa;power of final model" ID="ID_844743583" CREATED="1613570115932" MODIFIED="1613570141565"/>
+</node>
+</node>
+<node TEXT="Cross-validation" ID="ID_117497547" CREATED="1613570203157" MODIFIED="1613570211412">
+<node TEXT="K-fold cross validation" FOLDED="true" ID="ID_419926584" CREATED="1613570408988" MODIFIED="1613570418746">
+<node TEXT="Split dataset into k partitions" ID="ID_714610205" CREATED="1613570468159" MODIFIED="1613570482207"/>
+<node TEXT="Train k models, each with&#xa;(k-1) partitions training set,&#xa;1 partition validation set" ID="ID_1195108840" CREATED="1613570264300" MODIFIED="1613570452399"/>
+<node TEXT="mean + stdev the results" ID="ID_370000483" CREATED="1613570301174" MODIFIED="1613571253509"/>
+</node>
+<node TEXT="Leave-on-out cross-validation" FOLDED="true" ID="ID_1673590485" CREATED="1613570513583" MODIFIED="1613571233247">
+<node TEXT="k = len(dataset)&#xa;ie. just one data point is left in the test set" ID="ID_417077324" CREATED="1613571196289" MODIFIED="1613571233246"/>
+<node TEXT="works only for small datasets" ID="ID_103902419" CREATED="1613571235312" MODIFIED="1613571241367"/>
+</node>
+<node TEXT="Stratified K-fold cross-validation" FOLDED="true" ID="ID_1176540526" CREATED="1613570521533" MODIFIED="1613570538622">
+<node TEXT="for imbalanced data" ID="ID_67309329" CREATED="1613570545217" MODIFIED="1613570549130"/>
+</node>
+<node ID="ID_1895508487" CREATED="1613571279401" MODIFIED="1613571316840"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      All of the <i>increase the computation power</i>&nbsp;needed
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="SageMaker training job" ID="ID_88315941" CREATED="1613571427209" MODIFIED="1613571433169">
+<node TEXT="Training data in&#xa;S3 bucket" FOLDED="true" ID="ID_40296306" CREATED="1613571433754" MODIFIED="1613571460582">
+<node TEXT="input data location" ID="ID_733208401" CREATED="1613571437520" MODIFIED="1613571445203"/>
+<node TEXT="output model location" ID="ID_1095966478" CREATED="1613571445847" MODIFIED="1613571450085"/>
+</node>
+<node TEXT="Compute resources" FOLDED="true" ID="ID_460348578" CREATED="1613571480446" MODIFIED="1613571599901">
+<font ITALIC="false"/>
+<node TEXT="ML instances managed by SageMaker" ID="ID_676411874" CREATED="1613571492979" MODIFIED="1613571511643"/>
+</node>
+<node TEXT="Elastic Container Registry path&#xa;containing the training code" ID="ID_244013567" CREATED="1613571561185" MODIFIED="1613571583619"/>
+</node>
+</node>
+<node TEXT="Hyperparameter optimization" FOLDED="true" ID="ID_438151131" CREATED="1613571633918" MODIFIED="1613571640581">
+<node ID="ID_1312547207" CREATED="1613571771061" MODIFIED="1613571822787"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <i>Hyperparameters</i>: settings of the
+    </p>
+    <p>
+      model to be tuned before training
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Affect" ID="ID_207109349" CREATED="1613571825932" MODIFIED="1613571841325">
+<node TEXT="Training time" ID="ID_785720190" CREATED="1613571842236" MODIFIED="1613571845853"/>
+<node TEXT="Model convergence" ID="ID_338312717" CREATED="1613571845984" MODIFIED="1613571861107"/>
+<node TEXT="Model accuracy" ID="ID_447076750" CREATED="1613571861697" MODIFIED="1613571864284"/>
+</node>
+<node TEXT="Categories" ID="ID_1584587295" CREATED="1613571891898" MODIFIED="1613571894445">
+<node TEXT="Model hyperparams" FOLDED="true" ID="ID_1239622638" CREATED="1613571894949" MODIFIED="1613573189617">
+<node TEXT="Examples:" ID="ID_342759478" CREATED="1613573180043" MODIFIED="1613573182789"/>
+<node TEXT="CNN filter size" ID="ID_881880248" CREATED="1613571952304" MODIFIED="1613571966317"/>
+<node TEXT="pooling" ID="ID_775249265" CREATED="1613571966887" MODIFIED="1613573189617"/>
+<node TEXT="CNN stride" ID="ID_1339158884" CREATED="1613571976088" MODIFIED="1613572037129"/>
+<node TEXT="padding" ID="ID_1517690986" CREATED="1613571983065" MODIFIED="1613571992995"/>
+</node>
+<node TEXT="Optimizer hyperparams" ID="ID_1855450707" CREATED="1613571908166" MODIFIED="1613571929107">
+<node TEXT="gradient descent params" ID="ID_1860539986" CREATED="1613572087657" MODIFIED="1613572091906"/>
+<node TEXT="stochastic descent params" ID="ID_1606310270" CREATED="1613572092314" MODIFIED="1613572098850"/>
+<node TEXT="momentum based optimizers&#xa;(eg. Adam)" ID="ID_803587390" CREATED="1613572108288" MODIFIED="1613572134442"/>
+<node TEXT="parameter weights&#xa;initialization" ID="ID_853168085" CREATED="1613572154930" MODIFIED="1613572212396" LINK="https://towardsdatascience.com/weight-initialization-in-neural-networks-a-journey-from-the-basics-to-kaiming-954fb9b47c79">
+<node TEXT="Xavier initialization" ID="ID_725888424" CREATED="1613572165848" MODIFIED="1613572176382"/>
+<node TEXT="He initialization" ID="ID_1265381504" CREATED="1613572177076" MODIFIED="1613573142686" LINK="https://prateekvishnu.medium.com/xavier-and-he-normal-he-et-al-initialization-8e3d7a087528"/>
+<node TEXT="if weights are initialized too big:&#xa;exploding gradients" ID="ID_448651389" CREATED="1613572424221" MODIFIED="1613572448717"/>
+<node TEXT="if too small:&#xa;vanishing gradients" ID="ID_33351602" CREATED="1613572449132" MODIFIED="1613572465694"/>
+</node>
+<node TEXT="dropout" ID="ID_1256085811" CREATED="1613574578696" MODIFIED="1613574585448"/>
+<node TEXT="Regularization" ID="ID_1084452443" CREATED="1613574599974" MODIFIED="1613574605029">
+<node TEXT="L1" ID="ID_1056139944" CREATED="1613574605727" MODIFIED="1613574606765">
+<node TEXT="Loss = Error(y, y&apos;)+lambda*sum(abs(W))" ID="ID_1408608049" CREATED="1613579859852" MODIFIED="1613580065913"/>
+<node TEXT="Linear model + L1 reg.=&#xa;Lasso regression" ID="ID_1032562762" CREATED="1613579979542" MODIFIED="1613579992561"/>
+</node>
+<node TEXT="L2" ID="ID_5367446" CREATED="1613574607398" MODIFIED="1613574608141">
+<node TEXT="Loss = Error(y, y&apos;)+lambda*sum(W^2)" ID="ID_1523929396" CREATED="1613579930647" MODIFIED="1613580074082"/>
+<node TEXT="Linear model + L2 reg.=&#xa;Ridge regression" ID="ID_394757024" CREATED="1613579996409" MODIFIED="1613580006507"/>
+</node>
+<node TEXT="modifies the loss to&#xa;push weights down" ID="ID_1723616160" CREATED="1613579826078" MODIFIED="1613579854830"/>
+</node>
+</node>
+<node TEXT="Data hyperparams" ID="ID_131691688" CREATED="1613571913063" MODIFIED="1613571924227">
+<node TEXT="Data augmentation params" ID="ID_895595836" CREATED="1613573163669" MODIFIED="1613573169829"/>
+</node>
+</node>
+<node TEXT="Process" ID="ID_1556958363" CREATED="1613573221602" MODIFIED="1613573224226">
+<node TEXT="Manual hyperparam selection" ID="ID_1499333552" CREATED="1613573224782" MODIFIED="1613573231268">
+<node TEXT="requires" ID="ID_1029309365" CREATED="1613573231600" MODIFIED="1613573244979">
+<node TEXT="model hyperparam knowledge" ID="ID_1449677154" CREATED="1613573245380" MODIFIED="1613573297619"/>
+<node TEXT="use case knowledge" ID="ID_467132385" CREATED="1613573281665" MODIFIED="1613573306357"/>
+<node TEXT="intuition" ID="ID_1194101306" CREATED="1613573284350" MODIFIED="1613573287558"/>
+<node TEXT="experience" ID="ID_1205264195" CREATED="1613573289311" MODIFIED="1613573291486"/>
+</node>
+<node TEXT="iterative process" ID="ID_1098704277" CREATED="1613573310690" MODIFIED="1613573325892"/>
+<node TEXT="laborious" ID="ID_1544007366" CREATED="1613573400276" MODIFIED="1613573413106"/>
+<node TEXT="not always efficient" ID="ID_951911502" CREATED="1613573326230" MODIFIED="1613573332907"/>
+</node>
+<node TEXT="Hyperparam search methods" ID="ID_777100756" CREATED="1613573346922" MODIFIED="1613573351745">
+<node TEXT="Grid search" ID="ID_619813249" CREATED="1613573353039" MODIFIED="1613573356495">
+<node TEXT="through but inefficient" ID="ID_1277999777" CREATED="1613573370708" MODIFIED="1613573481320"/>
+</node>
+<node TEXT="Random search" ID="ID_640384374" CREATED="1613573382920" MODIFIED="1613573386187">
+<node TEXT="can set time and&#xa;resource constraints" ID="ID_745266469" CREATED="1613573453678" MODIFIED="1613573493240"/>
+</node>
+</node>
+<node TEXT="Automated hyperparam tuning" ID="ID_510624971" CREATED="1613573508804" MODIFIED="1613573558714">
+<node TEXT="guided search in HP space" ID="ID_903120625" CREATED="1613573564346" MODIFIED="1613573578741"/>
+<node TEXT="algorithms" ID="ID_371995875" CREATED="1613573580589" MODIFIED="1613573584245">
+<node TEXT="gradient descent" ID="ID_992155088" CREATED="1613573584570" MODIFIED="1613573588135"/>
+<node TEXT="Bayesian optimization" ID="ID_457238093" CREATED="1613573588667" MODIFIED="1613573590808"/>
+<node TEXT="evolutionary algorithms" ID="ID_1943245478" CREATED="1613573593583" MODIFIED="1613573596158"/>
+</node>
+<node TEXT="SageMaker HP tuning" ID="ID_1693085760" CREATED="1613573606085" MODIFIED="1613573780803">
+<node TEXT="specify HP search alg" ID="ID_400547065" CREATED="1613573799637" MODIFIED="1613573838849"/>
+<node TEXT="specify HP ranges" ID="ID_1179674265" CREATED="1613573812426" MODIFIED="1613573828771"/>
+<node TEXT="specify model metrics" ID="ID_347281438" CREATED="1613573817174" MODIFIED="1613573822838"/>
+<node TEXT="runs many training jobs" ID="ID_1797556406" CREATED="1613573781584" MODIFIED="1613573788943"/>
+<node TEXT="select the best" ID="ID_1796076031" CREATED="1613573845748" MODIFIED="1613573848781"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Evaluating ML models" ID="ID_1387001345" CREATED="1613582245655" MODIFIED="1613582250003">
+<node TEXT="Estimate model performance on unseen data:&#xa;evaluate the model on the hold-out data set" ID="ID_943875149" CREATED="1613582269375" MODIFIED="1613582320050"/>
+<node TEXT="Classification models" ID="ID_553696107" CREATED="1613582352797" MODIFIED="1613582360752">
+<node TEXT="Confusion matrix" ID="ID_1124379238" CREATED="1613582361094" MODIFIED="1613582364480"/>
+<node TEXT="Accuracy" ID="ID_558818907" CREATED="1613582455196" MODIFIED="1613582457702">
+<node TEXT="correct predictions / all predictions" ID="ID_1010497144" CREATED="1613582458232" MODIFIED="1613582465386"/>
+<node TEXT="less effective for imbalanced data sets" ID="ID_1225198535" CREATED="1613582469926" MODIFIED="1613582487109"/>
+</node>
+<node TEXT="Precision" FOLDED="true" ID="ID_877191394" CREATED="1613582501873" MODIFIED="1613582552514">
+<node TEXT="proportion of positive predictions&#xa;that are actually correct" ID="ID_1620147953" CREATED="1613582504650" MODIFIED="1613582555937"/>
+<node TEXT="works well if the cost of false positives is high" ID="ID_581214563" CREATED="1613582565554" MODIFIED="1613582574976"/>
+</node>
+<node TEXT="F1 score" ID="ID_1495045683" CREATED="1613582726266" MODIFIED="1613582729112">
+<node TEXT="2 * precision * recall / (precision + recall)" ID="ID_1378820275" CREATED="1613582729905" MODIFIED="1613582741543"/>
+</node>
 </node>
 </node>
 </node>
